@@ -1,0 +1,23 @@
+>>> s1={10,20,30,40}
+>>> s2={10,20,50,60}
+>>> s3=s1.difference(s2)
+>>> print(s3)
+{40, 30}
+>>> s4=s2.difference(s1)
+>>> print(s4)
+{50, 60}
+>>> s5=s.symmetric_difference(s2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 's' is not defined. Did you mean: 's1'?
+>>> s5=s1.symmetric_difference(s2)
+>>> print(s5)
+{40, 50, 60, 30}
+>>> s6=s2.symmeric_difference(s1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'set' object has no attribute 'symmeric_difference'. Did you mean: 'symmetric_difference'?
+>>>  s6=s2.symmetric_difference(s1)
+  File "<stdin>", line 1
+    s6=s2.symmetric_difference(s1)
+IndentationError: unexpected indent

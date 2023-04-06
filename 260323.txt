@@ -1,0 +1,151 @@
+Python 3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a=123
+>>> print(a)
+123
+>>> type(a)
+<class 'int'>
+>>> id(a)
+140725746205288
+>>>  print(a,type (a), id(a))
+  File "<stdin>", line 1
+    print(a,type (a), id(a))
+IndentationError: unexpected indent
+>>> print(a,type(a),id(a))
+123 <class 'int'> 140725746205288
+>>> a=23
+>>> print(a,type(a),id(a))
+23 <class 'int'> 140725746202088
+>>> a=0b000100
+>>> print(a)
+4
+>>> a=0B101110
+>>> print(a)
+46
+>>> a=-0b11100010
+>>> print(a)
+-226
+>>> bin(46)
+'0b101110'
+>>> bin(-226)
+'-0b11100010'
+>>> a=0o33856
+  File "<stdin>", line 1
+    a=0o33856
+          ^
+SyntaxError: invalid digit '8' in octal literal
+>>> a=0O235246
+>>> print(a)
+80550
+>>> oct(80550)
+'0o235246'
+>>> Oct(80550)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Oct' is not defined. Did you mean: 'oct'?
+>>> BIN(23)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'BIN' is not defined. Did you mean: 'bin'?
+>>> oct(532)
+'0o1024'
+>>> a=0o12354
+>>> print(a,type(a))
+5356 <class 'int'>
+>>> a=0x536
+>>> print(a)
+1334
+>>> hex(1334)
+'0x536'
+>>> print(a,type(a))
+1334 <class 'int'>
+>>> a=0b1010
+>>> b=oct(a)
+>>> print(b,type(b))
+0o12 <class 'str'>
+>>> print(a,type(a))
+10 <class 'int'>
+>>> print(oct(10))
+0o12
+>>> a=0xf
+>>> print(a)
+15
+>>> a=0o12
+>>> b=bin(a)
+>>> print (a,type(a))
+10 <class 'int'>
+>>> print9a,type(b))
+  File "<stdin>", line 1
+    print9a,type(b))
+                   ^
+SyntaxError: unmatched ')'
+>>> print(b(type(b))
+...
+...
+...
+...
+...
+... bye
+  File "<stdin>", line 1
+    print(b(type(b))
+          ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print(b,type(b))
+0b1010 <class 'str'>
+>>> a=0xe
+>>> print(b)
+0b1010
+>>> b=bin(a)
+>>> print(b)
+0b1110
+>>>  a=14
+  File "<stdin>", line 1
+    a=14
+IndentationError: unexpected indent
+>>> a=14
+>>> b=hex(a)
+>>> print(b)
+0xe
+>>>
+
+>>> a=12.34
+>>> print(a,type(a))
+12.34 <class 'float'>
+>>> b=-0.9
+>>> print (b,type(b))
+-0.9 <class 'float'>
+>>> a=0b1011101.0b1111010
+  File "<stdin>", line 1
+    a=0b1011101.0b1111010
+                ^
+SyntaxError: invalid decimal literal
+>>> a=3e2
+>>> print(a,type(a)
+... )
+300.0 <class 'float'>
+>>> a=4e-2
+>>> print(a,type(a))
+0.04 <class 'float'>
+>>> a=0.00000000000006
+>>> print(a,type(a))
+6e-14 <class 'float'>xcfxd  
+>>>
+>>> a=true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined. Did you mean: 'True'?
+>>> a=True
+>>> b=False
+>>> print(a*b)
+0
+>>> print(2*True+True+False)
+3
+>>> print(True//False)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: integer division or modulo by zero
+>>> print(True/False)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+>>>
